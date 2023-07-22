@@ -1,0 +1,9 @@
+tensorflow
+numpy
+pandas 
+matplotlib
+dvc
+notebook
+seaborn
+
+-e .
