@@ -5,7 +5,11 @@ matplotlib
 dvc
 notebook
 seaborn
-
+python-box
+pyYAML
+tdqm
+ensure==1.0.2
+joblib
 -e .
 #dev requirements
 pytest== 7.1.3
