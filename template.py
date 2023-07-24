@@ -15,7 +15,7 @@ list_of_file = [
     "tests/__init__.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
-    'config.config.yaml',
+    'config/config.yaml',
     'dvc.yaml',
     'params.yaml',
     'init_setup.sh',
