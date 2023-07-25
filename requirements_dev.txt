@@ -6,6 +6,7 @@ dvc
 notebook
 seaborn
 python-box
+ipykernel
 pyYAML
 tdqm
 ensure==1.0.2

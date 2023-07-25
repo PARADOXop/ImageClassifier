@@ -5,6 +5,7 @@ matplotlib
 dvc
 notebook
 seaborn
+ipykernel
 python-box==1.0.2
 pyYAML
 tdqm
