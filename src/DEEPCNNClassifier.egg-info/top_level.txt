@@ -1,1 +1,1 @@
-DEEPCNNClassifier
+deepClassifier
