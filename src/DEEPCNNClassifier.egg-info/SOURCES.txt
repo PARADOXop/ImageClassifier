@@ -8,8 +8,14 @@ src/DEEPCNNClassifier.egg-info/dependency_links.txt
 src/DEEPCNNClassifier.egg-info/requires.txt
 src/DEEPCNNClassifier.egg-info/top_level.txt
 src/deepClassifier/__init__.py
+src/deepClassifier/components/DataIngestion.py
 src/deepClassifier/components/__init__.py
+src/deepClassifier/config/__init__.py
+src/deepClassifier/config/configuration.py
 src/deepClassifier/constants/__init__.py
+src/deepClassifier/entity/__init__.py
+src/deepClassifier/entity/config_entity.py
 src/deepClassifier/pipeline/__init__.py
+src/deepClassifier/pipeline/stage01_data_ingestion.py
 src/deepClassifier/utils/__init__.py
 src/deepClassifier/utils/common.py
