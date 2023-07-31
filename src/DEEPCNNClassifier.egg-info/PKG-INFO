@@ -5,6 +5,7 @@ Summary: A small python package for CNN
 Home-page: https://github.com/PARADOXop/DEEPCNNClassifier
 Author: PARADOXop
 Author-email: RAVIRAJKUKADE11@GMAIL.COM
+License: MIT
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.7
