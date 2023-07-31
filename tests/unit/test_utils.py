@@ -7,8 +7,8 @@ from ensure.main import EnsureError
 
 class Test_read_yaml:
     yaml_files = [
-        "tests/data/empty.yaml",
-        "tests/data/demo.yaml"
+        "tests/Data/empty.yaml",
+        "tests/Data/demo.yaml"
     ]
 
     def test_read_yaml_empty(self):
