@@ -8,6 +8,7 @@ seaborn
 python-box==6.0.2
 pyYAML
 tqdm
+ipykernel
 ensure==1.0.2
 joblib
 types-PyYAML
