@@ -102,6 +102,7 @@ ipython_config.py
 
 # pyenv
 .python-version
+.egg-info/
 deep_pro/
 ./src/DEEPCNNClassifier.egg-info/
 DEEPCNNClassifier.egg-info/
