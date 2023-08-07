@@ -7,8 +7,8 @@ from ensure.main import EnsureError
 
 class Test_read_yaml:
     yaml_files = [
-        "tests/Data/empty.yaml",
-        "tests/Data/demo.yaml"
+        "tests/data/empty.yaml",
+        "tests/data/demo.yaml"
     ]
 
     def test_read_yaml_empty(self):
@@ -23,4 +23,5 @@ class Test_read_yaml:
     def test_read_yaml_bad_type(self, path_to_yaml):
         with pytest.raises(EnsureError):
             read_yaml(path_to_yaml)
+
 

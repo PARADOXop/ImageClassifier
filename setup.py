@@ -1,24 +1,27 @@
 import setuptools
 
-with open('README.md', 'r', encoding='utf-8') as f:
+with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
-__version__ = '0.0.0.1'
+__version__ = "0.0.0"
 
-REPO_NAME = 'DEEPCNNClassifier'
-AUTHOR_USER_NAME = 'PARADOXop'
-SRC_REPO = 'DEEPCNNClassifier'
-AUTHOR_EMAIL = 'RAVIRAJKUKADE11@GMAIL.COM'
+REPO_NAME = "FSDS_NOV_deepCNNClassifier"
+AUTHOR_USER_NAME = "c17hawke"
+SRC_REPO = "deepClassifier"
+AUTHOR_EMAIL = "sunny.c17hawke@gmail.com"
 
 setuptools.setup(
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description='A small python package for CNN',
+    description="A small python package for CNN app",
     long_description=long_description,
-    long_description_content_type='text/markdown',  # Corrected parameter name
-    url=f'https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}',
-    package_dir={'': 'src'},
-    packages=setuptools.find_packages(where='src')
+    long_description_content="text/markdown",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    project_urls={
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
+    },
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src")
 )

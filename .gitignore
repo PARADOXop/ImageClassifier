@@ -26,24 +26,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -58,7 +40,6 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
-SOURCES.txt
 .nox/
 .coverage
 .coverage.*
@@ -102,10 +83,7 @@ ipython_config.py
 
 # pyenv
 .python-version
-.egg-info/
-deep_pro/
-./src/DEEPCNNClassifier.egg-info/
-DEEPCNNClassifier.egg-info/
+
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
