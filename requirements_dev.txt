@@ -10,6 +10,7 @@ pyYAML
 tqdm
 ensure==1.0.2
 joblib
+tensorflow<2.11
 types-PyYAML
 scipy
 mlflow==1.26.1
