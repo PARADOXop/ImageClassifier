@@ -21,6 +21,7 @@ class PrepareBaseModelConfig:
     params_weights: str
     params_classes: int
 
+
 @dataclass(frozen=True)
 class PrepareCallbacksConfig:
     root_dir: Path
@@ -39,3 +40,10 @@ class TrainingConfig:
     params_is_augmentation: bool
     params_image_size: list
 
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    path_of_model: Path
+    training_data: Path
+    params_image_size: list
+    params_batch_size: int
