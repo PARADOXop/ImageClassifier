@@ -4,12 +4,13 @@ from deepClassifier.entity import EvaluationConfig
 from deepClassifier.utils import save_json
 from deepClassifier import logger
 
+
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
         self.config = config
 
     def _valid_generator(self):
-        logger.info('started valid generator')
+        logger.info("started valid generator")
         datagenerator_kwargs = dict(rescale=1.0 / 255, validation_split=0.30)
 
         dataflow_kwargs = dict(
@@ -26,22 +27,22 @@ class Evaluation:
             directory=self.config.training_data,
             subset="validation",
             shuffle=False,
-            **dataflow_kwargs
+            **dataflow_kwargs,
         )
 
     @staticmethod
     def load_model(path: Path) -> tf.keras.Model:
-        logger.info(f'loading model from {path}')
+        logger.info(f"loading model from {path}")
         return tf.keras.models.load_model(path)
 
     def evaluation(self):
         self.model = self.load_model(self.config.path_of_model)
-        logger.info('model loaded')
+        logger.info("model loaded")
         self._valid_generator()
         self.score = self.model.evaluate(self.valid_generator)
-        logger.info(f'score is {self.score}')
+        logger.info(f"score is {self.score}")
 
     def save_score(self):
-        logger.info('saving score')
+        logger.info("saving score")
         scores = {"loss": self.score[0], "accuracy": self.score[1]}
         save_json(path=Path("scores.json"), data=scores)
