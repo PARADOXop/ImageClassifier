@@ -146,3 +146,4 @@ mlruns/*
 research/mlflow_dir/mlruns/*
 prediction_service/model.h5
 xd.py
+zxd1.py
