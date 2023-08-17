@@ -1,4 +1,4 @@
-tensorflow
+tensorflow<2.11
 dvc
 pandas
 notebook

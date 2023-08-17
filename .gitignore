@@ -141,3 +141,4 @@ research/mlflow_dir/mlruns/*
 prediction_service/model.h5
 xd.py
 artifacts/training/*
+vars.py
