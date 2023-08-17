@@ -10,7 +10,7 @@ pyYAML
 tqdm
 ensure==1.0.2
 joblib
-tensorflow<2.11
+streamlit
 types-PyYAML
 scipy
 mlflow==2.2.2

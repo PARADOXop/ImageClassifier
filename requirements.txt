@@ -7,8 +7,8 @@ matplotlib
 seaborn
 python-box==6.0.2
 pyYAML
-tensorflow<2.11
 tqdm
+streamlit
 ensure==1.0.2
 joblib
 types-PyYAML
