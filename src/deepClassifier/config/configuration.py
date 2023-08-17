@@ -87,9 +87,13 @@ class ConfigurationManager:
         return training_config
 
     def get_validation_config(self) -> EvaluationConfig:
+        config = self.config.Evaluation
+        
         eval_config = EvaluationConfig(
-            path_of_model=self.config.training.trained_model_path,
-            training_data=self.config.data_ingestion.unzip_dir,
+            path_of_model=config.path_of_model,
+            training_data=config.training_data,
+            mlflow_uri=config.mlflow_uri,
+            all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE,
         )
