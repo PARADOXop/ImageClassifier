@@ -19,4 +19,5 @@ jobs:
         with:
           context: prediction_service/
           push: true
-          tags: PARADOXop/prediction_services:Latest
+          tags: paradoxop/prediction_services:latest
+
