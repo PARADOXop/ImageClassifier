@@ -19,16 +19,16 @@ class Test_DataIngestion_download:
 
 class Test_DataIngestion_unzip:
     data_ingestion_config = DataIngestionConfig(
-        root_dir="tests/data/", 
+        root_dir="./data/", 
         source_URL="", 
-        local_data_file="tests/data/sample_data.zip", 
-        unzip_dir="tests/data/")
+        local_data_file="./data/sample_data.zip", 
+        unzip_dir="./data/")
 
     def test_unzip(self):
         data_ingestion = DataIngestion(config=self.data_ingestion_config)
         data_ingestion.unzip_and_clean()
-        assert os.path.isdir(Path("tests/data/PetImages"))
-        assert os.path.isdir(Path("tests/data/PetImages/Cat"))
-        assert os.path.isdir(Path("tests/data/PetImages/Dog"))
+        assert os.path.isdir(Path("./data/PetImages"))
+        assert os.path.isdir(Path("./data/PetImages/Cat"))
+        assert os.path.isdir(Path("./data/PetImages/Dog"))
 
         

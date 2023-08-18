@@ -9,7 +9,7 @@ class Test_DataIngestion:
         root_dir="tests/data/", 
         source_URL="https://raw.githubusercontent.com/c17hawke/raw_data/main/sample_data.zip", 
         local_data_file="tests/data/data_integration.zip", 
-        unzip_dir="tests/data/")
+        unzip_dir="./data/")
 
     def test_download(self):
         data_ingestion = DataIngestion(config=self.data_ingestion_config)
@@ -19,9 +19,9 @@ class Test_DataIngestion:
     def test_unzip(self):
         data_ingestion = DataIngestion(config=self.data_ingestion_config)
         data_ingestion.unzip_and_clean()
-        assert os.path.isdir(Path("tests/data/PetImages"))
-        assert os.path.isdir(Path("tests/data/PetImages/Cat"))
-        assert os.path.isdir(Path("tests/data/PetImages/Dog"))
+        assert os.path.isdir(Path("./data/PetImages"))
+        assert os.path.isdir(Path("./data/PetImages/Cat"))
+        assert os.path.isdir(Path("./data/PetImages/Dog"))
 
 
 
