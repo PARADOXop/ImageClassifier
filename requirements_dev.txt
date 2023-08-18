@@ -1,4 +1,4 @@
-tensorflow<2.11
+tensorflow
 dvc
 pandas
 notebook
@@ -13,7 +13,7 @@ joblib
 streamlit
 types-PyYAML
 scipy
-mlflow==2.2.2
+mlflow
 -e .
 
 ## Dev requirements
