@@ -24,4 +24,3 @@ class Test_read_yaml:
         with pytest.raises(EnsureError):
             read_yaml(path_to_yaml)
 
-
