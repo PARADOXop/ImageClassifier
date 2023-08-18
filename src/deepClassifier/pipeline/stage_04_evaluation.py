@@ -2,13 +2,15 @@ from deepClassifier.config import ConfigurationManager
 from deepClassifier.components import Evaluation
 from deepClassifier import logger
 import os
+from dotenv import load_dotenv
 STAGE_NAME = "Evaluation"
-exec(open("vars.py").read())
 
+load_dotenv()
 
-os.environ['MLFLOW_TRACKING_URI'] = MLFLOW_TRACKING_URI
-os.environ['MLFLOW_TRACKING_USERNAME'] = MLFLOW_TRACKING_USERNAME
-os.environ['MLFLOW_TRACKING_PASSWORD'] = MLFLOW_TRACKING_PASSWORD
+os.environ["MLFLOW_TRACKING_URI"] = os.getenv("MLFLOW_TRACKING_URI")
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+
 
 def main():
     config = ConfigurationManager()
@@ -21,7 +23,7 @@ def main():
 
 if __name__ == "__main__":
     try:
-        logger.info(f"*******************")
+        logger.info("*******************")
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         main()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")

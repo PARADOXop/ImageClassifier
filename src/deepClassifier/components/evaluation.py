@@ -4,13 +4,12 @@ import os
 from deepClassifier.entity import EvaluationConfig
 from deepClassifier.utils import save_json
 from deepClassifier import logger
-import os
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
 
 class Evaluation:
-    def __init__(self, config: EvaluationConfig):
+    def __init__(self,config:EvaluationConfig):
         self.config = config
 
     def _valid_generator(self):
@@ -69,7 +68,6 @@ class Evaluation:
                 mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
                 mlflow.log_params(self.config.all_params)
                 mlflow.log_metrics(
-                {"loss": self.score[0], "accuracy": self.score[1]}
-            )
+                {"loss": self.score[0], "accuracy": self.score[1]})
             else:
                 mlflow.keras.log_model(self.model, "model")
