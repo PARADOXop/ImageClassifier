@@ -3,13 +3,14 @@ from deepClassifier.components import Evaluation
 from deepClassifier import logger
 import os
 from dotenv import load_dotenv
+
 STAGE_NAME = "Evaluation"
 
 load_dotenv()
 
-os.environ["MLFLOW_TRACKING_URI"] = os.getenv("MLFLOW_TRACKING_URI")
-os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
-os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+os.environ["MLFLOW_TRACKING_URI"] = str(os.getenv("MLFLOW_TRACKING_URI"))
+os.environ["MLFLOW_TRACKING_USERNAME"] = str(os.getenv("MLFLOW_TRACKING_USERNAME"))
+os.environ["MLFLOW_TRACKING_PASSWORD"] = str(os.getenv("MLFLOW_TRACKING_PASSWORD"))
 
 
 def main():

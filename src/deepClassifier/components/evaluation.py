@@ -1,6 +1,5 @@
 import tensorflow as tf
 from pathlib import Path
-import os
 from deepClassifier.entity import EvaluationConfig
 from deepClassifier.utils import save_json
 from deepClassifier import logger
@@ -11,6 +10,7 @@ from urllib.parse import urlparse
 class Evaluation:
     def __init__(self,config:EvaluationConfig):
         self.config = config
+        self.score = None
 
     def _valid_generator(self):
         logger.info("started valid generator")
