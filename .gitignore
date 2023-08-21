@@ -138,7 +138,6 @@ artifacts/prepare_base_model/base_model_updated.h5
 artifacts/prepare_callbacks/*
 mlruns/*
 research/mlflow_dir/mlruns/*
-prediction_service/model.h5
 xd.py
 artifacts/training/*
 vars.py
