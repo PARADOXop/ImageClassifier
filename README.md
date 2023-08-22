@@ -1,5 +1,5 @@
 # deep Classifier project
-
+LINK TO APP: https://classifywithcnns.streamlit.app/
 ## workflow
 
 1. Update config.yaml
