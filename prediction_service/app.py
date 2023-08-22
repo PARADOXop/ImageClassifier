@@ -3,7 +3,8 @@ from PIL import Image
 import tensorflow as tf
 import pandas as pd
 import numpy as np
-
+import os 
+os.chdir('./prediction_service')
 """
 # deep Classifier project
 
