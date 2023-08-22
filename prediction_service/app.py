@@ -3,7 +3,6 @@ from PIL import Image
 import tensorflow as tf
 import pandas as pd
 import numpy as np
-import os 
 
 """
 # deep Classifier project
