@@ -4,7 +4,7 @@ import tensorflow as tf
 import pandas as pd
 import numpy as np
 import os 
-os.chdir('./prediction_service')
+os.chdir("/mount/src/deepcnnclassifier/prediction_service")
 """
 # deep Classifier project
 
