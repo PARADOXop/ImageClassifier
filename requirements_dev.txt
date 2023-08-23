@@ -18,7 +18,7 @@ mlflow
 
 ## Dev requirements
 pytest
-tox
+tox==3.25.1
 black
 flake8
 mypy
